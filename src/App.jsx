@@ -1,9 +1,10 @@
-import { Suspense } from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
 import Footer from "./components/Footer";
-import TechEvents from "./pages/TechEvents";
-import NonTechEvents from "./pages/NonTechEvents";
+
+const Home = lazy(() => import("./components/Home"));
+const TechEvents = lazy(() => import("./pages/TechEvents"));
+const NonTechEvents = lazy(() => import("./pages/NonTechEvents"));
 
 function App() {
   return (
