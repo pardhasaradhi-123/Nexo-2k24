@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center">
+      <div className="max-sm:h-screen flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center">
           <img
             src={logo}
