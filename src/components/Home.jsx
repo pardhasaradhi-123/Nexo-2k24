@@ -4,6 +4,7 @@ import bgVid from "../assets/bgVid.mp4";
 import desktop_hero_bg from "../assets/desktop_hero_bg.mp4";
 import About from "./About";
 import Events from "./Events";
+import Navbar from "./Navbar";
 
 const Home = () => {
   const [mobileScreen, setMobileScreen] = useState(window.innerWidth <= 768); // Set mobileScreen based on initial window size
@@ -21,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="h-screen flex justify-center items-center relative">
+      <div className="h-full flex justify-center items-center relative">
         <video
           src={mobileScreen ? bgVid : desktop_hero_bg} // Conditionally render based on mobileScreen state
           loop
@@ -29,7 +30,10 @@ const Home = () => {
           muted
           className="absolute top-0 left-0 w-full h-full object-cover -z-20"
         ></video>
-        <Hero />
+        <div>
+          <Navbar />
+          <Hero />
+        </div>
       </div>
       <About />
       <Events />

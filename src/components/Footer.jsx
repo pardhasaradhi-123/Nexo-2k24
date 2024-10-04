@@ -69,11 +69,9 @@ const Footer = () => {
               Phone:{" "}
               <span className="font-medium text-base">+91 1234567890</span>
             </p>
-            <p className="font-semibold text-xl">
-              Email:
-              <span className="font-medium text-base max-sm:text-sm">
-                nexodus2k24jeppiaaruniversity@gmail.com
-              </span>
+
+            <p className="font-medium text-base max-sm:text-sm">
+              nexodus2k24jeppiaaruniversity@gmail.com
             </p>
           </div>
         </div>

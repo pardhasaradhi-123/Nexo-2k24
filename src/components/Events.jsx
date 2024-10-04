@@ -1,16 +1,23 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import bgVid from "../assets/event_bgVid.mp4";
+import bgVid from "../assets/eventBg.mp4";
 import img from "../assets/Jeppiaar University-1-1.png";
 import { MdViewList } from "react-icons/md";
 import { FaListUl } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Events = () => {
   const techEvents = [
     { name: "Innovative-Expo", img: img },
     { name: "Tech Talk Arena", img: img },
     { name: "Bytes & Brains Challenge", img: img },
+  ];
+
+  const nonTechEvents = [
+    { name: "Ad-Zap", img: img },
+    { name: "Echo-Echo", img: img },
+    { name: "Tune Teaser", img: img },
   ];
 
   useEffect(() => {
@@ -59,14 +66,16 @@ const Events = () => {
                 })}
               </div>
               <div className="flex justify-center items-center">
-                <button
-                  className="flex justify-center items-center gap-3 bg-gradient-to-tr from-yellow-950 to-yellow-900 hover:bg-gradient-to-t hover:from-yellow-950 hover:to-yellow-900 hover:scale-110 hover:tracking-wide transition-transform text-white p-3 rounded-md uppercase font-semibold"
-                  data-aos="flip-left"
-                  data-aos-delay="100"
-                >
-                  <MdViewList />
-                  view all
-                </button>
+                <Link to="/tech-events">
+                  <button
+                    className="flex justify-center items-center gap-3 bg-gradient-to-tr from-yellow-950 to-yellow-900 hover:bg-gradient-to-t hover:from-yellow-950 hover:to-yellow-900 hover:scale-110 hover:tracking-wide transition-transform text-white p-3 rounded-md uppercase font-semibold"
+                    data-aos="flip-left"
+                    data-aos-delay="100"
+                  >
+                    <MdViewList />
+                    view all
+                  </button>
+                </Link>
               </div>
             </article>
           </div>
@@ -81,7 +90,7 @@ const Events = () => {
                 </h1>
               </div>
               <div className="grid grid-cols-3 gap-[2rem] max-md:grid-cols-2 max-sm:grid-cols-1 py-5">
-                {techEvents.map((event, index) => {
+                {nonTechEvents.map((event, index) => {
                   return (
                     <article
                       key={index}
@@ -101,14 +110,16 @@ const Events = () => {
                 })}
               </div>
               <div className="flex justify-center items-center">
-                <button
-                  className="flex justify-center items-center gap-3 bg-gradient-to-tr from-yellow-950 to-yellow-900 hover:bg-gradient-to-t hover:from-yellow-950 hover:to-yellow-900 hover:scale-110 hover:tracking-wide transition-transform text-white p-3 rounded-md uppercase font-semibold"
-                  data-aos="flip-left"
-                  data-aos-delay="100"
-                >
-                  <FaListUl />
-                  view all
-                </button>
+                <Link to="/non-tech-events">
+                  <button
+                    className="flex justify-center items-center gap-3 bg-gradient-to-tr from-yellow-950 to-yellow-900 hover:bg-gradient-to-t hover:from-yellow-950 hover:to-yellow-900 hover:scale-110 hover:tracking-wide transition-transform text-white p-3 rounded-md uppercase font-semibold"
+                    data-aos="flip-left"
+                    data-aos-delay="100"
+                  >
+                    <FaListUl />
+                    view all
+                  </button>
+                </Link>
               </div>
             </article>
           </div>
