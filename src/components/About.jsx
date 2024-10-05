@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import university from "../assets/Jeppiaar University-1-1.png";
 import bgVid from "../assets/bg_for_about_section.mp4";
+import eventLogo from "../assets/aboutEventLogo.jpg";
 
 const About = () => {
   useEffect(() => {
@@ -54,9 +55,9 @@ const About = () => {
             data-aos="fade-up"
           >
             <img
-              src={university}
+              src={eventLogo}
               alt="img"
-              className="w-[35%] max-sm:hidden"
+              className="w-[35%] max-sm:hidden rounded-lg"
               data-aos="zoom-in"
             />
             <div data-aos="fade-right">

@@ -58,9 +58,12 @@ const Events = () => {
                         alt={event.name}
                         className="w-full rounded-md"
                       />
-                      <h1 className="p-5 text-center font-medium text-xl tracking-wide">
-                        {event.name}
-                      </h1>
+                      <div className="p-3 flex flex-col justify-around items-center">
+                        <h1 className="p-5 text-center font-medium text-xl tracking-wide">
+                          {event.name}
+                        </h1>
+                        
+                      </div>
                     </article>
                   );
                 })}

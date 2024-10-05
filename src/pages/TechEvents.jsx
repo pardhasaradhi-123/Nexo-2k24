@@ -13,7 +13,7 @@ const TechEvents = () => {
     { name: "Tech Talk Arena", img: img },
     { name: "Hunt the Bug", img: img },
     { name: "innovative Expo", img: img },
-    { name: "Bytes & Brains Challenge", img: img },
+    { name: "Byte & Brain Challenges", img: img },
   ];
 
   useEffect(() => {
@@ -61,9 +61,20 @@ const TechEvents = () => {
                       alt={event.name}
                       className="w-full rounded-md"
                     />
-                    <h1 className="p-5 text-center font-medium text-xl tracking-wide">
-                      {event.name}
-                    </h1>
+                    <div className="p-3 flex flex-col justify-around items-center gap-3">
+                      <h1 className="p-5 text-center font-medium text-xl tracking-wide">
+                        {event.name}
+                      </h1>
+                      <Link to={`/tech-events/${event.name}`}>
+                        <button
+                          className="flex justify-center items-center gap-3 bg-gradient-to-tr from-yellow-950 to-yellow-900 hover:bg-gradient-to-t hover:from-yellow-950 hover:to-yellow-900 hover:scale-110 hover:tracking-wide transition-transform text-white p-3 rounded-md uppercase font-semibold"
+                          data-aos="flip-left"
+                          data-aos-delay="100"
+                        >
+                          view details
+                        </button>
+                      </Link>
+                    </div>
                   </article>
                 );
               })}

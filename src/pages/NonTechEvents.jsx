@@ -13,8 +13,9 @@ const NonTechEvents = () => {
     { name: "Echo-Echo", img: img },
     { name: "Tune Teaser", img: img },
     { name: "Treasure Hunt", img: img },
-    { name: "Dare & Ladder", img: img },
+    { name: "Dare and Ladder", img: img },
     { name: "Meme Creation", img: img },
+    { name: "Ballitastic blash", img: img },
   ];
 
   useEffect(() => {
@@ -47,7 +48,7 @@ const NonTechEvents = () => {
               </Link>
             </div>
             <div className="flex justify-center items-center">
-              <h1 className="capitalize text-3xl font-bold">tech events</h1>
+              <h1 className="capitalize text-3xl font-bold">Non-Tech events</h1>
             </div>
             <div className="grid grid-cols-3 gap-[2rem] max-md:grid-cols-2 max-sm:grid-cols-1 py-5">
               {techEvents.map((event, index) => {
@@ -62,9 +63,20 @@ const NonTechEvents = () => {
                       alt={event.name}
                       className="w-full rounded-md"
                     />
-                    <h1 className="p-5 text-center font-medium text-xl tracking-wide">
-                      {event.name}
-                    </h1>
+                    <div className="p-3 flex flex-col justify-around items-center gap-3">
+                      <h2 className="capitalize text-lg font-bold">
+                        {event.name}
+                      </h2>
+                      <Link to={`/non-tech-events/${event.name}`}>
+                        <button
+                          className="flex justify-center items-center gap-3 bg-gradient-to-tr from-yellow-950 to-yellow-900 hover:bg-gradient-to-t hover:from-yellow-950 hover:to-yellow-900 hover:scale-110 hover:tracking-wide transition-transform text-white p-3 rounded-md uppercase font-semibold"
+                          data-aos="flip-left"
+                          data-aos-delay="100"
+                        >
+                          view details
+                        </button>
+                      </Link>
+                    </div>
                   </article>
                 );
               })}
