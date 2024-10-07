@@ -12,7 +12,7 @@ const TechEvents = () => {
     { name: "Prompt.img", img: img },
     { name: "Tech Talk Arena", img: img },
     { name: "Hunt the Bug", img: img },
-    { name: "innovative Expo", img: img },
+    { name: "Innovative Expo", img: img },
     { name: "Byte & Brain Challenges", img: img },
   ];
 

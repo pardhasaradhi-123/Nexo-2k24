@@ -9,12 +9,12 @@ import Navbar from "../components/Navbar";
 
 const NonTechEvents = () => {
   const techEvents = [
-    { name: "Ad-Zap", img: img },
+    { name: "AdZap", img: img },
     { name: "Echo-Echo", img: img },
-    { name: "Tune Teaser", img: img },
+    { name: "Tune Teasers", img: img },
     { name: "Treasure Hunt", img: img },
+    { name: "Laugh Factory", img: img },
     { name: "Dare and Ladder", img: img },
-    { name: "Meme Creation", img: img },
     { name: "Ballitastic blash", img: img },
   ];
 
