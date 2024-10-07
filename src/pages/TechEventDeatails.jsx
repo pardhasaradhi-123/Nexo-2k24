@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import { GiArchiveRegister } from "react-icons/gi";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import bgVid from "../assets/eventDetailsBgVid.mp4";
@@ -108,6 +109,21 @@ const TechEventDeatails = () => {
                 {detailsData.studentCoordinate}
               </p>
             </div>
+          </div>
+          <div className="flex justify-center items-center">
+            <Link
+              to="https://forms.gle/pezEirrmEtt9UYYx5"
+              className="max-sm:hidden max-md:hidden max-lg:hidden"
+            >
+              <button
+                className="flex justify-center items-center gap-3 bg-gradient-to-tr from-yellow-950 to-yellow-900 hover:bg-gradient-to-t hover:from-yellow-950 hover:to-yellow-900   transition-transform text-white p-3 rounded-md uppercase font-semibold"
+                data-aos="flip-left"
+                data-aos-delay="500" // Add AOS attributes
+              >
+                <GiArchiveRegister />
+                register now
+              </button>
+            </Link>
           </div>
         </div>
       </div>

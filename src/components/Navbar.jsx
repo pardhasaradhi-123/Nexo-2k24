@@ -52,7 +52,7 @@ const Navbar = () => {
             );
           })}
           <Link
-            to="https://linktr.ee/Nexodus2k24"
+            to="https://forms.gle/pezEirrmEtt9UYYx5"
             className="max-sm:hidden max-md:hidden max-lg:hidden"
           >
             <button

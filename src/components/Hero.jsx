@@ -16,7 +16,7 @@ const Hero = () => {
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"
           />
-          <Link to="https://linktr.ee/Nexodus2k24">
+          <Link to="https://forms.gle/pezEirrmEtt9UYYx5">
             <button
               className="flex justify-center items-center gap-3 bg-gradient-to-tr from-yellow-950 to-yellow-900 hover:bg-gradient-to-t hover:from-yellow-950 hover:to-yellow-900 hover:scale-110 hover:tracking-wide transition-transform text-white p-3 rounded-md uppercase font-semibold"
               data-aos="flip-left"

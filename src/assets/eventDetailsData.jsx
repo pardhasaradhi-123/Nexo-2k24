@@ -1,7 +1,7 @@
 const eventDatails = [
   {
     name: "Treasure Hunt",
-    staffCoordinate: "Dr.Arthy James & Dr.P.Manikandan",
+    staffCoordinate: "Dr. CH. NAgalakshmi , Dr.Arthy James & Dr.P.Manikandan",
     studentCoordinate: "Surya.P , Ajay.A & Thirumathi.C",
     desc: "A Game in which the organizers prepare a list defining specific items that need to be found, which the participants seek to gather or complete all items on the list, usually without purchasing them. Usually parcipants work in small teams, although the rules may allow",
     rules: [
