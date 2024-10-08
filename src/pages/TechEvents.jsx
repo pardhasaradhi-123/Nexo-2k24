@@ -6,14 +6,17 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import Navbar from "../components/Navbar";
+import bytesBrainsChallengeIMG from "../assets/bytes&Brainschallenge_1_1.png";
+import techTalkArenaIMG from "../assets/techTalkArena_1_1.png";
+import huntTheBug from "../assets/treasureHunt_1_1.png";
 
 const TechEvents = () => {
   const techEvents = [
     { name: "Prompt.img", img: img },
-    { name: "Tech Talk Arena", img: img },
-    { name: "Hunt the Bug", img: img },
+    { name: "Tech Talk Arena", img: techTalkArenaIMG },
+    { name: "Hunt the Bug", img: huntTheBug },
     { name: "Innovative Expo", img: img },
-    { name: "Byte & Brain Challenges", img: img },
+    { name: "Byte & Brain Challenges", img: bytesBrainsChallengeIMG },
   ];
 
   useEffect(() => {

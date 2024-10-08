@@ -15,7 +15,7 @@ const NonTechEvents = () => {
     { name: "Treasure Hunt", img: img },
     { name: "Laugh Factory", img: img },
     { name: "Dare and Ladder", img: img },
-    { name: "Ballitastic blash", img: img },
+    { name: "Ball'tastic blash", img: img },
   ];
 
   useEffect(() => {

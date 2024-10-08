@@ -6,7 +6,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import bgVid from "../assets/eventDetailsBgVid.mp4";
 import eventDatails from "../assets/eventDetailsData";
-import img from "../assets/aboutEventLogo.jpg";
 
 const TechEventDeatails = () => {
   const { name } = useParams();
@@ -18,6 +17,7 @@ const TechEventDeatails = () => {
   }, []);
 
   const detailsData = eventDatails.find((event) => event.name === name);
+
   return (
     <div className="h-full flex justify-center items-center relative">
       <video
@@ -32,12 +32,12 @@ const TechEventDeatails = () => {
         <div className="w-full">
           <div
             data-aos="fade-down"
-            className="h-screen w-screen max-sm:h-full max-md:h-full max-lg:h-full"
+            className="h-full w-full max-sm:h-full max-md:h-full max-lg:h-full"
           >
             <img
-              src={img}
+              src={detailsData?.img}
               alt="img"
-              className="h-full w-screen max-sm:h-full max-md:h-full max-lg:h-full"
+              className="h-full w-full max-sm:h-full max-md:h-full max-lg:h-full"
             />
           </div>
           <div className="p-5">
@@ -55,6 +55,23 @@ const TechEventDeatails = () => {
                 {detailsData.desc}
               </p>
             </div>
+            {detailsData.theme ? (
+              <ul className="text-xl p-3">
+                <p className="text-2xl font-semibold tracking-wide">Theme:</p>
+
+                {detailsData.theme.map((eachTHeme, index) => {
+                  return (
+                    <li
+                      key={index}
+                      className="mx-10 py-2 max-sm:py-1 list-none"
+                      data-aos="fade-up"
+                    >
+                      {eachTHeme}
+                    </li>
+                  );
+                })}
+              </ul>
+            ) : null}
             <ul data-aos="fade-zoom-in" data-aos-easing="ease-in-sine">
               <h1 className="text-2xl font-semibold">Rules:</h1>
               {detailsData.rules.map((eachRule, index) => {
