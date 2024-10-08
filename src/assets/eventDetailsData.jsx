@@ -150,6 +150,8 @@ const eventDatails = [
       "Performances will be evaluated based on: Creativity and originality , Synchronization with the visuals & Clarity and expression in dubbing",
       "ID card is necessary for all the participants.",
     ],
+    venue: "LH-14",
+    eventTime: "11:00AM - 1:00AM",
     prizes:
       "1st PRIZE: 500/- , 2ndPRIZE: 250/- & Participation certificate for participants.",
     registrationFee: "per team is 80/-",
@@ -280,7 +282,7 @@ const eventDatails = [
       "The participants should bring their own laptop.",
     ],
     prizes: "1st PRIZE: 500 ,2nd PRIZE: 250 ",
-    venue: "",
+    venue: "LH-13",
     eventTime: "9:00AM - 11:00AM",
     registrationFee: "100/- per team",
   },
