@@ -33,12 +33,12 @@ const NonTechEventDetails = () => {
         <div className="w-full">
           <div
             data-aos="fade-down"
-            className="h-full w-screen max-sm:h-full max-md:h-full max-lg:h-full"
+            className="h-full w-screen flex justify-center items-center max-sm:h-full max-md:h-full max-lg:h-full"
           >
             <img
               src={detailsData.img}
               alt="img"
-              className="h-full w-screen max-sm:h-full max-md:h-full max-lg:h-full"
+              className="h-full w-[50%] max-sm:w-screen max-sm:h-full max-md:h-full max-lg:h-full"
             />
           </div>
           <div className="p-5">

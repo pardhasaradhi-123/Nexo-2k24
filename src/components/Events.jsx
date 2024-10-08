@@ -2,22 +2,27 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import bgVid from "../assets/eventBg.mp4";
-import img from "../assets/Jeppiaar University-1-1.png";
 import { MdViewList } from "react-icons/md";
 import { FaListUl } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import innovativeExpo from "../assets/innovative_expo_1-1.png";
+import techTalkArena from "../assets/techTalkArena_1_1.png";
+import bytesBrainChallenge from "../assets/bytes&Brainschallenge_1_1.png";
+import adzap from "../assets/adzap_1-1.png";
+import echoEcho from "../assets/echo-echo_1-1.png";
+import tuneTeasers from "../assets/tune_teaser_1-1.png";
 
 const Events = () => {
   const techEvents = [
-    { name: "Innovative-Expo", img: img },
-    { name: "Tech Talk Arena", img: img },
-    { name: "Bytes & Brains Challenge", img: img },
+    { name: "Innovative-Expo", img: innovativeExpo },
+    { name: "Tech Talk Arena", img: techTalkArena },
+    { name: "Bytes & Brains Challenge", img: bytesBrainChallenge },
   ];
 
   const nonTechEvents = [
-    { name: "Ad-Zap", img: img },
-    { name: "Echo-Echo", img: img },
-    { name: "Tune Teaser", img: img },
+    { name: "Ad-Zap", img: adzap },
+    { name: "Echo-Echo", img: echoEcho },
+    { name: "Tune Teaser", img: tuneTeasers },
   ];
 
   useEffect(() => {
@@ -62,7 +67,6 @@ const Events = () => {
                         <h1 className="p-5 text-center font-medium text-xl tracking-wide">
                           {event.name}
                         </h1>
-                        
                       </div>
                     </article>
                   );

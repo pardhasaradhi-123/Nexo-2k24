@@ -66,10 +66,13 @@ const Footer = () => {
           <h1 className="capitalize text-2xl tracking-wide">contact us</h1>
           <div className="flex flex-col justify-center items-center gap-5">
             <p className="font-semibold text-xl">
-              Phone:{" "}
-              <span className="font-medium text-base">+91 1234567890</span>
+              Staff Co-ordinator:{" "}
+              <span className="font-medium text-base">+91 8012635713</span>
             </p>
-
+            <p className="font-semibold text-xl">
+              Student Co-ordinator:{" "}
+              <span className="font-medium text-base">+91 9345497425</span>
+            </p>
             <p className="font-medium text-base max-sm:text-sm">
               nexodus2k24jeppiaaruniversity@gmail.com
             </p>

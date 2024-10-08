@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import img from "../assets/Jeppiaar University-1-1.png";
 import bgVid from "../assets/eventBg.mp4";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -8,14 +7,16 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 import Navbar from "../components/Navbar";
 import bytesBrainsChallengeIMG from "../assets/bytes&Brainschallenge_1_1.png";
 import techTalkArenaIMG from "../assets/techTalkArena_1_1.png";
-import huntTheBug from "../assets/treasureHunt_1_1.png";
+import huntTheBug from "../assets/huntTheBug_1-1.png";
+import promptIMG from "../assets/promp.img_1-1.jpg";
+import innovative_expo from "../assets/innovative_expo_1-1.png";
 
 const TechEvents = () => {
   const techEvents = [
-    { name: "Prompt.img", img: img },
+    { name: "Prompt.img", img: promptIMG },
     { name: "Tech Talk Arena", img: techTalkArenaIMG },
     { name: "Hunt the Bug", img: huntTheBug },
-    { name: "Innovative Expo", img: img },
+    { name: "Innovative Expo", img: innovative_expo },
     { name: "Byte & Brain Challenges", img: bytesBrainsChallengeIMG },
   ];
 
@@ -36,18 +37,6 @@ const TechEvents = () => {
         <div className="flex flex-col justify-center items-center gap-10">
           <Navbar />
           <div>
-            <div>
-              <Link to="/">
-                <button
-                  className="flex justify-center items-center gap-3 bg-gradient-to-tr from-yellow-950 to-yellow-900 hover:bg-gradient-to-t hover:from-yellow-950 hover:to-yellow-900 hover:scale-110 hover:tracking-wide transition-transform text-white p-3 rounded-md uppercase font-semibold"
-                  data-aos="flip-left"
-                  data-aos-delay="100"
-                >
-                  <IoMdArrowRoundBack />
-                  go back
-                </button>
-              </Link>
-            </div>
             <div className="flex justify-center items-center">
               <h1 className="capitalize text-3xl font-bold">tech events</h1>
             </div>
